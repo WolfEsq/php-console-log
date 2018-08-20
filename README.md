@@ -11,12 +11,12 @@ Allows you to write PHP log/debug information to the browser JavaScript console.
 
 ## Examples
 
- * console_log( "Content to log:" . $variable , info );
- * console_log( $array , error );
- * console_log( $object , warning );
- * console_log( "Debug test" , debug );
+ * console_log( "Content to log:" . $variable , 'info' );
+ * console_log( $array , 'error' );
+ * console_log( $object , 'warning' );
+ * console_log( "Debug test" , 'debug' );
 
- Make sure the console is set to show debug or in verbose mode.
+ Make sure the console is set to show debug or in verbose mode if you use 'debug'.
 
 ## Installation
-Upload the ```wholesaler-taxes``` folder to the ```/wp-content/plugins/``` directory then activate through the Plugins dashboard in WordPress.
+Upload the ```php-console-log``` folder to the ```/wp-content/plugins/``` directory then activate through the Plugins dashboard in WordPress.

@@ -9,10 +9,10 @@
  *
  * @package ConsoleLog
  *
- * @example console_log("Content to log:" . $variable , info);
- * @example console_log($array , error);
- * @example console_log($object , warning);
- * @example console_log("Debug test" , debug); // Make sure the console is set to show debug or in verbose mode.
+ * @example console_log( "Content to log:" . $variable , 'info' );
+ * @example console_log( $array , 'error' );
+ * @example console_log( $object , 'warning' );
+ * @example console_log( "Debug test" , 'debug' ); // Make sure the console is set to show debug or in verbose mode.
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 require dirname( __FILE__ ) . '/class-console.php';
 
 /**
- * Translate simplified function to console_log()
+ * Translate simplified function to Console class
  *
  * @param *      $info The information to display in the console.
  * @param string $type Whether it is info, error, warning, or debug type in the console.
