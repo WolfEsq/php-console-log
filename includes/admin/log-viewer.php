@@ -34,7 +34,6 @@ function show_php_console_log_viewer() {
 
 		foreach ( $logs as $log ) {
 			echo '[' . $log . '<br><br>';
-
 		}
 		?>
 	</div>

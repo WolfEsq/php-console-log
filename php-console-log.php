@@ -9,7 +9,7 @@
  *
  * @package ConsoleLog
  *
- * @example console_log( "Content to log:" . $variable , 'info' );
+ * @example console_log( 'Content to log:' . $variable , 'info' );
  * @example console_log( $array , 'error' );
  * @example console_log( $object , 'warning' );
  * @example console_log( "Debug test" , 'debug' ); // Make sure the console is set to show debug or in verbose mode.
@@ -36,9 +36,9 @@ if ( ! function_exists( 'console_log' ) ) {
 	 *
 	 * @param *      $info The information to display in the console.
 	 * @param string $type Whether it is info, error, warning, or debug type in the console.
-	 * @param bool   $write_it Whether to write the $info to the error log as well.
+	 * @param bool   $log_it Whether to write the $info to the error log as well.
 	 */
-	function console_log( $info, $type = 'info', $write_it = false ) {
+	function console_log( $info, $type = 'info', $log_it = false ) {
 
 		$output_type = $type;
 
@@ -62,8 +62,8 @@ if ( ! function_exists( 'console_log' ) ) {
 		// Write to the JavaScript console using the Console class.
 		Console::show( $info, $output_type );
 
-		// Write to debug.log if debugging is enabled and $write_it is true.
-		if ( true === $write_it ) {
+		// Write to debug.log if debugging is enabled and $log_it is true.
+		if ( true === $log_it ) {
 			write_log( $info );
 		}
 
@@ -74,7 +74,7 @@ if ( ! function_exists( 'write_log' ) ) {
 	/**
 	 * Record debugging in the error log if debugging is enabled in wp-config.php.
 	 *
-	 * @param string $log The value to write to the log.
+	 * @param string $info The value to write to the log.
 	 */
 	function write_log( $info ) {
 
