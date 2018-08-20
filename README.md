@@ -1,7 +1,7 @@
 # Console_Log Plugin for WordPress
 
-[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%205.2-8892BF.svg?style=flat-square)](https://php.net/)
-[![GitHub license](https://img.shields.io/badge/license-GPL_2-blue.svg)](https://raw.githubusercontent.com/tommy-muehle/error-log-parser/master/LICENSE)
+![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%205.2-8892BF.svg?style=flat-square)
+![GitHub license](https://img.shields.io/badge/license-GPL_2-blue.svg)
 
 Contributors: WolfEsq  
 Requires at least: 4.0  
@@ -22,7 +22,7 @@ console_log( *mixed* $info, *string* $type, *boolean* $log_it );
 
 __$info__
 
-*(string|integer|array|object|boolean) (Required)* The information to display in the console.
+*(string | integer | array | object | boolean) (Required)* The information to display in the console.
 
 __$type__
 
@@ -33,7 +33,7 @@ __$type__
 __$log_it__
 
 (boolean) (Optional) Whether to write the $info to the error log as well.
-*Default value: ```false```*
+*Default value:* `false`
 
 ### Examples
 
