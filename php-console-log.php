@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: PHP Console Log
- * Plugin URI: https://
+ * Plugin URI: https://github.com/WolfEsq/php-console-log
  * Description: Allows you to write PHP log/debug information to the browser JavaScript console.
  * Author: WolfEsq
  * Version: 1.0.0
- * Author URI: https://
+ * Author URI: https://github.com/WolfEsq
  *
  * @package ConsoleLog
  *
